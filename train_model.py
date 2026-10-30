@@ -53,7 +53,7 @@ train_acc_lr = logreg.score(X_train, y_train) * 100
 test_acc_lr = logreg.score(X_test, y_test) * 100
 
 # Random Forest
-rf_reg = RandomForestRegressor()
+rf_reg = RandomForestClassifier()
 rf_reg.fit(X_train, y_train)
 predictions_rf = rf_reg.predict(X_test)
 
